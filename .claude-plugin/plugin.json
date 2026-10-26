@@ -1,0 +1,22 @@
+{
+  "name": "zeit-protokoll",
+  "version": "0.1.0",
+  "description": "Zeigt mit /zeit, wie lange Claude in dieser Sitzung, heute und diese Woche je Projekt gearbeitet hat, und schreibt auf Wunsch eine Zeile ins Projekt",
+  "author": { "name": "Robert-P. Pelikan, oQueo", "url": "https://oqueo.io" },
+  "homepage": "https://oqueo.io",
+  "license": "MIT",
+  "userConfig": {
+    "datei": {
+      "type": "string",
+      "title": "Protokolldatei",
+      "description": "Name der Datei, in die /zeit schreiben eine Zeile anhängt. Sie liegt im Arbeitsordner der Sitzung.",
+      "default": "zeitprotokoll.md"
+    },
+    "behalte_tage": {
+      "type": "number",
+      "title": "Aufbewahrung in Tagen",
+      "description": "Wie lange die Tageswerte gespeichert bleiben. Ältere werden beim Start der Sitzung gelöscht.",
+      "default": 90
+    }
+  }
+}
